@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-12-18T10:37:17+01:00
+
+====== BASE DE DONNEES ======
+Created lundi 18 décembre 2023
+
+Ressources :
+https://youtu.be/Ecv0PEOvLq0?feature=shared
+https://youtu.be/Pgx0RMKg7bo?feature=shared
+
+
+__BDD__ = Données + SGBD
+
+
+__A quoi sert une BDD__ ?
+- Stocker les infos / données
+- Accès aux données
+- Manipulation des données : MAJ, Insertion, Suppression
+
+Elle doit permettre d'accéder et de manipuler les données rapidement.
+
+ACID = Atomic Coherence Isolation Durabilité. Cahier des charges auquel correspondant la plupart des BDD : My SQL, SQLite, PostGresSql.
+
+Composition d'une SGBD : Moteur SQL, catalogue, processeur de requête et langage de requête
+
+
+__Processus__ :
+1) J'écris ma requête en sql
+2) Le processeur de requête le traduit et détermine un plan d'exécution
+3) On vérifie dans le catalogue que l'utilisateur a le droit de faire toutes les opérations nécessaires o=au plan d'exécution
+4) On envoie alors le plan au moteur sql qui va manipuler les fichiers et faire les traitements nécessaires
+5) Le résultat de la requête nos est retourné
+
+__SGBD__ :
+My SQL, SQLite, Oracle Sql, PostGresSql, etc.
+
+Un SGBD contient plusieurs BDD.
+
+Arborescence :
+
+My Sql \
+	[[DataBase]] \ 
+		Table \
+			 Column,
+			Contraint (not null, Foreign Key), [porte sur une table &s'applique au moment de l'insertion d'une ligne]
+			key, 
+			index 
+				(classement => Select * From seance WHERE date > now ();)
+

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2023-12-18T13:51:17+01:00
+
+====== Comprendre le SQL ======
+Created lundi 18 décembre 2023
+
+__SQL__ = Structured Query Language
+
+
+{{./pasted_image.png}}
+
+
+{{./pasted_image001.png}}
+
+
+{{./pasted_image002.png}}
+
+
+{{./pasted_image003.png}}
+
+
+
